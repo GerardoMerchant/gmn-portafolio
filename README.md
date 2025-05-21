@@ -15,6 +15,16 @@ Bienvenido a mi portafolio web personal, un sitio donde presento mis proyectos, 
 - Sección de proyectos con descripciones y enlaces
 - Formulario de contacto funcional
 
+## 📬 Contacto
+
+-¿Quieres contactarme? Puedes hacerlo desde el formulario del sitio o a través de:
+
+-Email: [gerardmerchant117@gmail.com](gerardmerchant117@gmail.com)
+
+-LinkedIn: [www.linkedin.com/in/gerardmerchantdev](www.linkedin.com/in/gerardmerchantdev)
+
+-GitHub: [https://github.com/GerardoMerchant](https://github.com/GerardoMerchant)
+
 ## 📁 Estructura del Proyecto
 
 ```bash
