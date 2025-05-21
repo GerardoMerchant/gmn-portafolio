@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Portafolio de Gerardo Merchant, ingeniero en sistemas, con proyectos en PHP, MySQL, JavaScript.">
+
+  <title>Mi portafolio</title>
+  <link rel="stylesheet" href="./app/views/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./app/views/css/style.css" />
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <header id="header">
+    <video autoplay loop muted id="bg-video">
+      <source src="./app/views/assets/video/bg.mp4" type="video/mp4" />
+    </video>
+    <div class="content">
+      <h1>Gerardo Merchant Niño</h1>
+      <div class="divider"></div>
+      <h2>Ingeniero en Sistemas Computacionales</h2>
+    </div>
+  </header>
+
+  <nav class="navbar sticky-top navbar-light">
+
+    <a class="navbar-brand" href="#">
+      <img src="./app/views/assets/img/xs.png" alt="" class="" 
+      style="width: 30px; height: 30px; border-radius: 50%; object-fit: cover;"/>
+      <span id="scrollFade">Gerardo Merchant Niño
+        <span class="half-size">Ingeniero en Sistemas Computacionales</span></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="#portafolio"><span class="section-item">Portafolio</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#skillset"><span class="section-item">Skillset</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#"><span class="section-item">Experiencia</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#contacto"><span class="section-item">Contacto</span></a>
+        </li>
+      </ul>
+    </div>
+
+  </nav>
+  <!-- <div class="container-fluid">-->
+  <div class="container-fluid">
+    <main>
+      <section class="mb-5 mt-5" id="portafolio">
+        <h3 class="main-title mb-3">PORTAFOLIO</h3>
+        <div class="divider mb-5"></div>
+
+        <div class="row justify-content-center row-cols-1 row-cols-md-3 g-4">
+          <!-- Card 1-->
+          <div class="col">
+            <div class="card border-primary h-100 w-100">
+              <img id="portafolio-img" src="./app/views/assets/img/portafolio/SGE/sge-title.jpg"
+                class="card-img-top img-fluid" alt="Pantalla de titulo del sistema" title="SGE" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Proyecto SGE (Sistema Gestor de Estacionamiento)
+                </h5>
+                <p class="card-text">
+                  Se realizó un sistema con el cual es posible el gestionar
+                  todos los aspectos de un estacionamiento, desde la
+                  administración de datos de usuario, hasta la completa
+                  monitorización de los lugares del estacionamiento.
+                </p>
+                <!--<a href="#" class="btn btn-warning">Conocer mas...</a>-->
+                <!-- Button trigger modal -->
+              </div>
+              <div class="card-footer">
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Conocer más...
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- /Card 1-->
+
+          <!-- Card 2-->
+          <div class="col">
+            <div class="card border-primary h-100 w-100">
+              <img id="portafolio-img" src="./app/views/assets/img/portafolio/rentasm/product-list.jpg"
+                class="card-img-top img-fluid" alt="Pantalla de titulo del sistema" title="RentaSM" />
+              <div class="card-body">
+                <h5 class="card-title">RentaSM</h5>
+                <p class="card-text">
+                  Sistema CRUD para la administración de productos de una
+                  empresa de alquieler.
+                </p>
+              </div>
+              <div class="card-footer">
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#card2">
+                  Conocer más...
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- /Card 2-->
+        </div>
+      </section>
+
+      <section class="mb-5 mt-5" id="skillset">
+        <h3 class="main-title mb-3">SKILLSET</h3>
+        <div class="divider mb-5"></div>
+
+        <div class="container">
+          <div class="row justify-content-center row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+              <div class="card mx-auto" style="width: 13rem">
+                <img src="./app/views/assets/img/skills/new-php-logo.svg" data-bs-toggle="tooltip"
+                  data-bs-placement="top" title="PHP" class="skill-img" alt="..." />
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mx-auto" style="width: 13rem">
+                <img src="./app/views/assets/img/skills/js.svg" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="Javascript" class="rounded-circle skill-img" alt="..." />
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mx-auto" style="width: 13rem">
+                <img src="./app/views/assets/img/skills/mysql-official.svg" data-bs-toggle="tooltip"
+                  data-bs-placement="top" title="MySQL" class="skill-img" alt="..." />
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mx-auto" style="width: 13rem">
+                <img src="./app/views/assets/img/skills/html.svg" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="HTML" class="rounded-circle skill-img" alt="..." />
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mx-auto" style="width: 13rem">
+                <img src="./app/views/assets/img/skills/css.svg" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="CSS" class="rounded-circle skill-img" alt="..." />
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mx-auto" style="width: 13rem">
+                <img src="./app/views/assets/img/skills/git.svg" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="Git" class="rounded-circle skill-img" alt="..." />
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mx-auto" style="width: 13rem">
+                <img src="./app/views/assets/img/skills/bootstrap.svg" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="Bootstrap" class="rounded-circle" alt="..." />
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mx-auto" style="width: 13rem">
+                <img src="./app/views/assets/img/skills/AJAX_logo_by_gengns.svg" data-bs-toggle="tooltip"
+                  data-bs-placement="top" title="AJAX" class="skill-img" alt="..." />
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mx-auto" style="width: 13rem">
+                <img src="./app/views/assets/img/skills/vscode.svg" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="Visual Studio Code" class="skill-img" alt="..." />
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mx-auto" style="width: 13rem">
+                <img src="./app/views/assets/img/skills/python-logo-generic.svg" data-bs-toggle="tooltip"
+                  data-bs-placement="top" title="Python" class="skill-img" alt="..." />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-5 mt-5" id="contacto">
+        <h3 class="main-title mb-3">Contacto</h3>
+        <div class="divider mb-5"></div>
+        <div class="d-flex justify-content-center align-items-center">
+          <form class="w-100 px-3 text-center" style="max-width: 800px;">
+            <div class="mb-3">
+              <label for="email" class="form-label fw-bold">Correo electrónico</label>
+              <input type="email" class="form-control mx-auto " id="email" placeholder="Ingresa tu email" style="padding: 1rem;">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label fw-bold">Tu mensaje</label>
+              <textarea class="form-control mx-auto" id="message" rows="3" style="padding: 1rem;"></textarea>
+            </div>
+      
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </div>
+  <!-- Footer -->
+
+  <footer class="mt-5" id="footer">
+    <small><span>Developed and designed by&nbsp;</span><a href='mailto:gerardmerchant117@gmail.com'>Gerardo
+        Merchant</a>. &copy; 2025<span class="min-footer">. All rights reserved.</span>
+    </small>
+  </footer>
+
+
+  <!-- Modal 1 -->
+  <div class="modal fade" id="staticBackdrop" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl md-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h5 class="" id="staticBackdropLabel">
+            Proyecto SGE (Sistema Gestor de Estacionamiento)
+          </h5>
+          <h6 id="staticBackdropLabel">Proyecto Universitario.</h6>
+          <hr />
+          <video controls disablepictureinpicture controlslist="" loop muted id="myVideo1" class="modal-video">
+            <source src="./app/views/assets/video/Funcionamiento-SGE.mp4" type="video/mp4" />
+          </video>
+          <hr />
+          <div class="icon-modal">
+            <button id="btnPlay" class="btn btn-light" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-video="myVideo1" title="Video">
+              <img id="" src="./app/views/assets/img/video-818.svg" class="arrow-icon" alt="" title="" />
+            </button>
+          </div>
+          <div>
+            <p>
+              SGE fue creado como un gran proyecto Universitario desarrollado
+              y diseñado para la web utilizando PHP, JavaScript. MySQL, HTML,
+              CSS y Python. Utilizando las librerías Bootstrap 4, AJAX,
+              JQuery, PHPQRCode e Instascan.
+            </p>
+          </div>
+        </div>
+        <div class="modal-footer"></div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal 1 -->
+
+  <!-- Modal 2 -->
+  <div class="modal fade" id="card2" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h5 class="" id="staticBackdropLabel">RentaSM</h5>
+          <h6 id="staticBackdropLabel">Sistema web para una empresa de alquieler.</h6>
+          <hr />
+          <!--<img src="./app/views/assets/img/portafolio/rentasm/category-list.jpg" class="d-block w-100" alt="...">
+          -->
+
+          <!-- Carusel test -->
+          <div id="carouselRentaSM" class="carousel slide" data-bs-ride="false" data-bs-interval="false">
+            <!-- <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselRentaSM" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselRentaSM" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselRentaSM" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselRentaSM" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            </div>-->
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="false">
+                <img src="./app/views/assets/img/portafolio/rentasm/product-list.jpg" class="modal-carousel"
+                  alt="..." />
+              </div>
+              <div class="carousel-item" data-bs-interval="false">
+                <img src="./app/views/assets/img/portafolio/rentasm/add-category.jpg" class="modal-carousel"
+                  alt="..." />
+              </div>
+              <div class="carousel-item" data-bs-interval="false">
+                <img src="./app/views/assets/img/portafolio/rentasm/category-list.jpg" class="modal-carousel"
+                  alt="..." />
+              </div>
+              <div class="carousel-item" data-bs-interval="false">
+                <video controls disablepictureinpicture controlslist="" loop muted id="myVideo2" class="modal-video">
+                  <source src="./app/views/assets/video/rentasm-test.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselRentaSM" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselRentaSM" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- Carusel test -->
+
+          <hr />
+          <div class="icon-modal">
+            <!--<a type="button" class="btn btn-light" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Visitar sitio" href="">
+              <img id="" src="./app/views/assets/img/box-arrow-up-right.svg" class="arrow-icon" alt="" title="" />
+            </a>-->
+            <button id="btnPlay" class="btn btn-light" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-video="myVideo2" title="Video" data-bs-target="#carouselRentaSM" data-bs-slide-to="3"
+              aria-label="Slide 4">
+              <img id="" src="./app/views/assets/img/video-818.svg" class="arrow-icon" alt="" title="" />
+            </button>
+          </div>
+          <div>
+            <p>
+              CRUD creado para la administración de inventario utilizando el
+              patron de diseño MVC en PHP, MySQL en la base de datos, Libreria
+              DataTables para la vista de los registros, además de otras
+              tecnologias.
+            </p>
+          </div>
+        </div>
+        <div class="modal-footer"></div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal 2 -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./app/views/js/navActiveState.js"></script>
+
+  <script>
+    var tooltipTriggerList = [].slice.call(
+      document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    );
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+
+    //const video1 = document.getElementById('myVideo1');
+    //const btn = document.getElementById('btnPlay');
+    //const video2 = document.getElementById('myVideo2');
+    //const btn1 = document.getElementById('btnPlay1');
+
+    const play_btn = document.querySelectorAll("#btnPlay");
+
+    play_btn.forEach((playBtn) => {
+      playBtn.addEventListener("click", () => {
+        const videoId = playBtn.getAttribute("data-video");
+        const video = document.getElementById(videoId);
+        video.play();
+      });
+    });
+  </script>
+</body>
+
+</html>
