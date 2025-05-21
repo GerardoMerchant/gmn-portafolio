@@ -30,13 +30,14 @@ Bienvenido a mi portafolio web personal, un sitio donde presento mis proyectos, 
 ```bash
 /
 ├── index.html
-├── css/
-│   └── style.css
+|──config
+|──app
+|   └── views
+│         ├── img/
+│         └── video/
+|   └── css/
+├         └── style.css
+│   └── js/
 ├── js/
 │   └── main.js
-├── assets/
-│   ├── images/
-│   └── videos/
-├── projects/
-│   └── [proyectos individuales]
 └── README.md
