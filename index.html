@@ -10,6 +10,7 @@
   <title>Mi portafolio</title>
   <link rel="stylesheet" href="./app/views/css/bootstrap.min.css" />
   <link rel="stylesheet" href="./app/views/css/style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
@@ -30,10 +31,10 @@
   <nav class="navbar sticky-top navbar-light">
 
     <a class="navbar-brand" href="#">
-      <img src="./app/views/assets/img/xs.png" alt="" class="" 
-      style="width: 30px; height: 30px; border-radius: 50%; object-fit: cover;"/>
+      <img src="./app/views/assets/img/xs.png" alt="" class="ms-3"
+        style="width: 30px; height: 30px; border-radius: 50%; object-fit: cover;" />
       <span id="scrollFade">Gerardo Merchant Niño
-        <span class="half-size">Ingeniero en Sistemas Computacionales</span></span>
+        <span class="half-size">Web Backend & Forntend Developer</span></span>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,9 +48,9 @@
         <li class="nav-item">
           <a class="nav-link active" href="#skillset"><span class="section-item">Skillset</span></a>
         </li>
-        <li class="nav-item">
+        <!--<li class="nav-item">
           <a class="nav-link active" href="#"><span class="section-item">Experiencia</span></a>
-        </li>
+        </li>-->
         <li class="nav-item">
           <a class="nav-link active" href="#contacto"><span class="section-item">Contacto</span></a>
         </li>
@@ -189,18 +190,35 @@
         <h3 class="main-title mb-3">Contacto</h3>
         <div class="divider mb-5"></div>
         <div class="d-flex justify-content-center align-items-center">
-          <form class="w-100 px-3 text-center" style="max-width: 800px;">
+          <form action="https://formspree.io/f/xnndyorg" method="POST" class="w-100 px-3 text-center"
+            style="max-width: 800px;">
             <div class="mb-3">
               <label for="email" class="form-label fw-bold">Correo electrónico</label>
-              <input type="email" class="form-control mx-auto " id="email" placeholder="Ingresa tu email" style="padding: 1rem;">
+              <input type="email" class="form-control mx-auto " id="email" name="email" placeholder="Ingresa tu email"
+                style="padding: 1rem;" required>
             </div>
             <div class="mb-3">
               <label for="message" class="form-label fw-bold">Tu mensaje</label>
-              <textarea class="form-control mx-auto" id="message" rows="3" style="padding: 1rem;"></textarea>
+              <textarea class="form-control mx-auto" id="message" name="message" rows="3"
+                style="padding: 1rem;" required></textarea>
             </div>
-      
             <button type="submit" class="btn btn-primary">Enviar</button>
           </form>
+        </div>
+        <div id="social-media" class="d-flex justify-content-center align-items-center pt-5">
+          <a href="https://www.linkedin.com/in/gerardmerchantdev/"><img id="linkedin"
+              src="app/views/assets/img/social/InBug-Black.png" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Ir a mi linkedin"></a>&nbsp;
+          <a href="https://github.com/GerardoMerchant">
+            <img id="github" src="app/views/assets/img/social/github-mark.png" data-bs-toggle="tooltip"
+              data-bs-placement="top" title="Ir a mi Github"></a>&nbsp;
+          <!-- Whats button -->
+          <a href="https://wa.me/525573738866?text=Hola, me gustaria contactarte." class="float-wa" target="_blank" data-bs-toggle="tooltip"
+          data-bs-placement="top" title="Enviame un Whatsapp">
+            <i class="fa fa-whatsapp" aria-hidden="true" style="margin-top:10px;"></i>
+          </a>
+          <!--<a href="https://www.facebook.com/XavierAlejandroReyesOchoa"><img id="facebook"
+              src="app/views/assets/img/social/facebook.png"></a>-->
         </div>
       </section>
     </main>
@@ -212,6 +230,7 @@
         Merchant</a>. &copy; 2025<span class="min-footer">. All rights reserved.</span>
     </small>
   </footer>
+
 
 
   <!-- Modal 1 -->
@@ -229,8 +248,10 @@
           <h6 id="staticBackdropLabel">Proyecto Universitario.</h6>
           <hr />
           <video controls disablepictureinpicture controlslist="" loop muted id="myVideo1" class="modal-video">
-            <source src="./app/views/assets/video/Funcionamiento-SGE.mp4" type="video/mp4" />
+            <source src="./app/views/assets/video/funcionamiento-sge-low-res.mp4" type="video/mp4" />
           </video>
+          <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/Sl4UQmEMJ9w?si=eMfwQv2Y6l3beMa4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          -->
           <hr />
           <div class="icon-modal">
             <button id="btnPlay" class="btn btn-light" data-bs-toggle="tooltip" data-bs-placement="top"
@@ -295,7 +316,7 @@
               </div>
               <div class="carousel-item" data-bs-interval="false">
                 <video controls disablepictureinpicture controlslist="" loop muted id="myVideo2" class="modal-video">
-                  <source src="./app/views/assets/video/rentasm-test.mp4" type="video/mp4" />
+                  <source src="./app/views/assets/video/rentasm-test-low-res.mp4" type="video/mp4" />
                 </video>
               </div>
             </div>
